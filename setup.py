@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="mailbit",
-    version="0.1.4",
+    version="0.1.5",
     description="A simple library to send emails using the Mailbit API",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
