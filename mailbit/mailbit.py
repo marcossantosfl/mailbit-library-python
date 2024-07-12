@@ -36,7 +36,6 @@ class Mailbit:
                         message = error_data.get('message', 'No error message provided')
                     raise ValueError(Mailbit.generate_error_message(code, message))
                 except ValueError:
-                    # Handle case where the response is not JSON formatted
                     code = err.response.status_code
                     message = err.response.text
                     raise ValueError(Mailbit.generate_error_message(code, message))
