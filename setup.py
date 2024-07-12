@@ -2,16 +2,16 @@ from setuptools import setup, find_packages
 
 setup(
     name="mailbit",
-    version="0.1.0",
+    version="0.1.1",
     description="A simple library to send emails using the Mailbit API",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="Marcos",
-    author_email="marcos.santos.filho.fl@gmail.com",
+    author_email="administrator@mailbit.io",
     url="https://github.com/marcossantosfl/mailbit-library-python",
     packages=find_packages(),
     install_requires=[
-        "requests",
+        "httpx",
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
